@@ -35,7 +35,7 @@ nav ul li a:hover {
 }
 
 /* Container for two-column layout */
-.container {
+.index-page .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -45,28 +45,28 @@ nav ul li a:hover {
 }
 
 /* Left column */
-.left-column {
+.index-page .left-column {
     flex: 1;
     padding-right: 2em;
 }
 
-.left-column h2 {
+.index-page .left-column h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.left-column p {
+.index-page .left-column p {
     font-size: 18px;
     line-height: 1.6;
 }
 
 /* Right column */
-.right-column {
+.index-page .right-column {
     flex: 1;
     text-align: center;
 }
 
-.right-column img {
+.index-page .right-column img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .container {
+    .index-page .container {
         flex-direction: column;
         padding: 1em;
     }
@@ -84,7 +84,7 @@ nav ul li a:hover {
         margin-bottom: 1em;
     }
 }
-h2 {
+h2,h1,h3,h4 {
     font-family: 'Fredoka', sans-serif; /* Ensure you're using the correct font */
     letter-spacing: 1px; /* Adjust spacing as needed (try values like 1px, 2px, etc.) */
     font-weight: 600; /* You can adjust this based on the weight you prefer */
