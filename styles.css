@@ -132,3 +132,129 @@ h2,h1,h3,h4 {
   .cv-button:hover {
     background-color: #acacac; /* Darker green on hover */
   }
+
+  /* Style the portfolio container */
+.portfolio {
+    display: flex; /* Flexbox layout */
+    flex-direction: column;
+    justify-content: space-between; /* Even space between items */
+    margin: 0 auto; /* Center the container */
+    width: 90%; /* Set width of container */
+    max-width: 1200px; /* Optional: Limit maximum width */
+  }
+
+  .portfolio-items {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between;
+    
+    
+  }
+  
+  /* Style individual portfolio items */
+  .portfolio-item, .portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
+    position: relative; /* Allows for absolute positioning of the text */
+    width: 30%; /* Each item takes 30% of the container */
+    height: 300px; /* Height of each item */
+    background-size: cover; /* Ensure background image covers the entire div */
+    background-position: center; /* Center the background image */
+    display: flex; /* Flexbox for content inside the item */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    color: white; /* White text on top of background */
+    font-family: 'Fredoka', sans-serif; /* Font style */
+    border-radius: 10px; /* Rounded corners for items */
+    overflow: hidden; /* Ensures text/image don't overflow the container */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
+  }
+  
+  /* Set the h3 style */
+  .portfolio-item h3 {
+    font-size: 24px; /* Size of the text */
+    margin: 0; /* Remove default margin */
+    z-index: 2; /* Ensure text appears above background */
+  }
+  
+  /* Add specific background images for each category */
+  .portfolio-item-1 {
+    background-image: url('Images/Portfolio/pexels-mikael-blomkvist-6476588.jpg');
+  }
+  
+  .portfolio-item-2 {
+    background-image: url('Images/Portfolio/China photos/DSC_0882.jpg');
+  }
+  
+  .portfolio-item-3 {
+    background-image: url('Images/Portfolio/pexels-ann-h-45017-1762851.jpg');
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center the items */
+    }
+  
+    .portfolio-item {
+      width: 90%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between items */
+    }
+  }
+/* Card container */
+.card {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Prevent content from overflowing */
+    min-width: 370px;
+    min-height:550px;
+    max-width: 380px;
+    max-height:560px;
+    margin:10px; /* Space around each card */
+    text-align: center; /* Center the text */
+    background-color: #6b6a6a; /* Background color of the card */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+  }
+  
+  /* Card header */
+  .card-header {
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    background-color: none;
+    padding: 10px;
+  }
+  
+  /* Card image */
+  .card-image {
+    width: 90%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Card description */
+  .card-description {
+    font-size: 16px;
+    padding: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to the next line if necessary */
+    justify-content: flex-start; /* Space between cards */
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1200px; /* Optional: Limit maximum width */
+  }
+
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .card {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 20px; /* Space between stacked cards */
+    }
+  }
