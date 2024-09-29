@@ -34,6 +34,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+a {
+    color: #ffffff; /* White text */
+    text-decoration: underline; /* Underlined text */
+}
+
+/* Optionally, style the hover state */
+a:hover {
+    color: #ffffff; /* Keep white on hover */
+    text-decoration: underline; /* Keep underlined on hover */
+}
+
 /* Container for two-column layout */
 .index-page .container {
     display: flex;
@@ -90,3 +101,34 @@ h2,h1,h3,h4 {
     font-weight: 600; /* You can adjust this based on the weight you prefer */
     color: #ffffff; /* White color for contrast against black background */
 }
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 1.6;
+}
+
+.cv-button {
+    background-color: white; /* Green background */
+    border: none; /* No border */
+    color: black; /* White text */
+    padding: 15px 15px; /* Padding around the text */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline for anchor tag */
+    display: inline-block; /* Aligns the button inline */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px; /* Font size */
+    margin: 10px 2px; /* Margin around the button */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    width: 30%;
+  }
+  
+  .cv-button:hover {
+    background-color: #acacac; /* Darker green on hover */
+  }
