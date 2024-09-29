@@ -134,6 +134,11 @@ h2,h1,h3,h4 {
   }
 
   /* Style the portfolio container */
+  .portfolio h1 {
+    text-align: center;
+  }
+
+
 .portfolio {
     display: flex; /* Flexbox layout */
     flex-direction: column;
@@ -206,7 +211,7 @@ h2,h1,h3,h4 {
     min-width: 370px;
     min-height:550px;
     max-width: 380px;
-    max-height:560px;
+    max-height:720px;
     margin:10px; /* Space around each card */
     text-align: center; /* Center the text */
     background-color: #6b6a6a; /* Background color of the card */
@@ -248,6 +253,7 @@ h2,h1,h3,h4 {
     max-width: 1200px; /* Optional: Limit maximum width */
   }
 
+
   @media (max-width: 768px) {
     .cards-container {
       flex-direction: column; /* Stack cards vertically on smaller screens */
@@ -257,4 +263,8 @@ h2,h1,h3,h4 {
       width: 100%; /* Full width on small screens */
       margin-bottom: 20px; /* Space between stacked cards */
     }
+  }
+
+  .website-design-header h1 {
+    text-align:center;
   }
