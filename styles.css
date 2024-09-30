@@ -339,3 +339,31 @@ h2,h1,h3,h4 {
     margin-bottom: 20px; /* Space between items */
   }
 }
+
+.China-header h1 {
+  text-align:center;
+}
+
+.masonry {
+  column-count: 3; /* Number of columns */
+  column-gap: 20px; /* Space between columns */
+}
+
+.masonry-item {
+  break-inside: avoid; /* Avoid breaking the item */
+  margin-bottom: 20px; /* Space between rows */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.05);
+}
