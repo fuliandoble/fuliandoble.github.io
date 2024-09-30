@@ -268,3 +268,74 @@ h2,h1,h3,h4 {
   .website-design-header h1 {
     text-align:center;
   }
+
+  .photography-header h1 {
+    text-align:center;
+  }
+
+/*photography page */
+
+
+.photography {
+  display: flex; /* Flexbox layout */
+  flex-direction: column;
+  justify-content: space-between; /* Even space between items */
+  margin: 0 auto; /* Center the container */
+  width: 90%; /* Set width of container */
+  max-width: 1200px; /* Optional: Limit maximum width */
+}
+
+.photography-items {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between;
+  
+  
+}
+
+/* Style individual portfolio items */
+.photography-item, .photography-item-1, .photography-item-2, .photography-item-3 {
+  position: relative; /* Allows for absolute positioning of the text */
+  width: 30%; /* Each item takes 30% of the container */
+  height: 300px; /* Height of each item */
+  background-size: cover; /* Ensure background image covers the entire div */
+  background-position: center; /* Center the background image */
+  display: flex; /* Flexbox for content inside the item */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  color: white; /* White text on top of background */
+  font-family: 'Fredoka', sans-serif; /* Font style */
+  border-radius: 10px; /* Rounded corners for items */
+  overflow: hidden; /* Ensures text/image don't overflow the container */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
+}
+
+/* Set the h3 style */
+.photography-item h3 {
+  font-size: 24px; /* Size of the text */
+  margin: 0; /* Remove default margin */
+  z-index: 2; /* Ensure text appears above background */
+}
+
+.photography-item-1 {
+  background-image: url('Images/Portfolio/China photos/DSC_0905.jpg');
+}
+
+.photography-item-2 {
+  background-image: url('Images/Portfolio/Rainy Mcdonalds/DSC_0039.jpg');
+}
+
+.photography-item-3 {
+  background-image: url('Images/Portfolio/My plants/DSC_0023.jpg');
+}
+
+@media (max-width: 768px) {
+  .photography {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items */
+  }
+
+  .photography-item {
+    width: 90%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Space between items */
+  }
+}
