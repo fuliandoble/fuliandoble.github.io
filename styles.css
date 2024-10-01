@@ -211,7 +211,7 @@ h2,h1,h3,h4 {
     min-width: 370px;
     min-height:550px;
     max-width: 380px;
-    max-height:720px;
+    max-height:800px;
     margin:10px; /* Space around each card */
     text-align: center; /* Center the text */
     background-color: #6b6a6a; /* Background color of the card */
