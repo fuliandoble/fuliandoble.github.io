@@ -396,3 +396,45 @@ footer {
 .partner-logo:hover {
   transform: scale(1.1); /* Slight zoom effect on hover */
 }
+
+.horizontal-container {
+  background-color: none;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.horizontal-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.horizontal-container p {
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+
+.features-container {
+  background-color: none;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.features-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.features-container p {
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
