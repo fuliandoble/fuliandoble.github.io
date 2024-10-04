@@ -1,6 +1,6 @@
 /* General styling */
 body {
-    font-family: Fredoka, sans-serif;
+    font-family: Raleway, sans-serif;
     background-color: #000000; /* Black background */
     color: white; /* White text for contrast */
     margin: 0;
@@ -96,7 +96,7 @@ a:hover {
     }
 }
 h2,h1,h3,h4 {
-    font-family: 'Fredoka', sans-serif; /* Ensure you're using the correct font */
+    font-family: 'Raleway', sans-serif; /* Ensure you're using the correct font */
     letter-spacing: 1px; /* Adjust spacing as needed (try values like 1px, 2px, etc.) */
     font-weight: 600; /* You can adjust this based on the weight you prefer */
     color: #ffffff; /* White color for contrast against black background */
@@ -121,7 +121,7 @@ h2,h1,h3,h4 {
     text-align: center; /* Centered text */
     text-decoration: none; /* No underline for anchor tag */
     display: inline-block; /* Aligns the button inline */
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px; /* Font size */
     margin: 10px 2px; /* Margin around the button */
     cursor: pointer; /* Cursor changes to pointer on hover */
@@ -166,7 +166,7 @@ h2,h1,h3,h4 {
     justify-content: center; /* Center the text horizontally */
     align-items: center; /* Center the text vertically */
     color: white; /* White text on top of background */
-    font-family: 'Fredoka', sans-serif; /* Font style */
+    font-family: 'Raleway', sans-serif; /* Font style */
     border-radius: 10px; /* Rounded corners for items */
     overflow: hidden; /* Ensures text/image don't overflow the container */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
@@ -225,7 +225,7 @@ h2,h1,h3,h4 {
   /* Card header */
   .card-header {
     font-size: 20px;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: none;
     padding: 10px;
   }
@@ -293,7 +293,7 @@ h2,h1,h3,h4 {
 }
 
 /* Style individual portfolio items */
-.photography-item, .photography-item-1, .photography-item-2, .photography-item-3 {
+.photography-item, .photography-item-1, .photography-item-2, .photography-item-3, .photography-item-4 {
   position: relative; /* Allows for absolute positioning of the text */
   width: 30%; /* Each item takes 30% of the container */
   height: 300px; /* Height of each item */
@@ -303,7 +303,7 @@ h2,h1,h3,h4 {
   justify-content: center; /* Center the text horizontally */
   align-items: center; /* Center the text vertically */
   color: white; /* White text on top of background */
-  font-family: 'Fredoka', sans-serif; /* Font style */
+  font-family: 'Raleway', sans-serif; /* Font style */
   border-radius: 10px; /* Rounded corners for items */
   overflow: hidden; /* Ensures text/image don't overflow the container */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
@@ -326,6 +326,10 @@ h2,h1,h3,h4 {
 
 .photography-item-3 {
   background-image: url('Images/Portfolio/My plants/DSC_0023.jpg');
+}
+
+.photography-item-4 {
+  background-image: url('Images/Portfolio/Pet photography/DSC_0149.jpg')
 }
 
 @media (max-width: 768px) {
