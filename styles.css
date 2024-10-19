@@ -260,7 +260,7 @@ h2,h1,h3,h4 {
     max-height:800px;
     margin:10px; /* Space around each card */
     text-align: center; /* Center the text */
-    background-color: #6b6a6a; /* Background color of the card */
+    background-color: white; /* Background color of the card */
     transition: transform 0.3s ease; /* Animation on hover */
   }
   
@@ -274,8 +274,13 @@ h2,h1,h3,h4 {
     font-family: 'Raleway', sans-serif;
     background-color: none;
     padding: 10px;
+    color: black;
   }
   
+.card-header a{
+  color: black;
+}
+
   /* Card image */
   .card-image {
     width: 90%; /* Full width for the image */
@@ -285,9 +290,10 @@ h2,h1,h3,h4 {
   /* Card description */
   .card-description {
     font-size: 16px;
+    font-family: 'Raleway', sans-serif;
     padding: 15px;
     line-height: 1.5;
-    color: #ffffff;
+    color: black;
   }
   
   .cards-container {
