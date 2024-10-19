@@ -83,6 +83,29 @@ a:hover {
     border-radius: 8px;
 }
 
+.image-card {
+  border: 1px solid #ccc; /* Border around the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  max-width: 300px; /* Limit the card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  background-color: #fff; /* Background color */
+}
+
+.image-card img {
+  width: 100%; /* Make the image take up the card's width */
+  border-radius: 8px; /* Optional: same rounded corners for image */
+}
+
+.image-card a {
+  color: black;
+}
+
+.image-text {
+  padding: 10px 0 0; /* Space above the text */
+  color:black
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .index-page .container {
@@ -103,21 +126,22 @@ h2,h1,h3,h4 {
 }
 
 .frontpage-line {
-  border: none; /* Remove the default border */
+  border: 2px; /* Remove the default border */
   border-top: solid white; /* Create a solid line */
   width: 80%; /* Adjust the width of the line */
-  margin: 10px 0 10px 0;
+  margin: 20px 0 20px 0;
 }
 
 .about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    text-align: center;
-    margin: 0 auto;
-    width: 60%;
-    line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  line-height: 1.6;
 }
 
 .cv-button {
@@ -379,10 +403,24 @@ h2,h1,h3,h4 {
   transform: scale(1.05);
 }
 
+.deas-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  line-height: 1.6;
+}
+
 footer {
   background-color: white; /* Light background color */
   padding: 20px;
   text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .partners-section h3 {
