@@ -52,6 +52,7 @@ a:hover {
     align-items: flex-start;
     padding: 2em;
     max-width: 1000px;
+    min-height: 400px;
     margin: 0 auto;
 }
 
@@ -71,10 +72,15 @@ a:hover {
     line-height: 1.6;
 }
 
+.index-page .-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 /* Right column */
 .index-page .right-column {
     flex: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .index-page .right-column img {
@@ -106,6 +112,14 @@ a:hover {
   color:black
 }
 
+.new-row {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .index-page .container {
@@ -116,6 +130,7 @@ a:hover {
     .left-column, .right-column {
         padding: 0;
         margin-bottom: 1em;
+        text-align: left;
     }
 }
 h2,h1,h3,h4 {
