@@ -102,6 +102,13 @@ h2,h1,h3,h4 {
     color: #ffffff; /* White color for contrast against black background */
 }
 
+.frontpage-line {
+  border: none; /* Remove the default border */
+  border-top: solid white; /* Create a solid line */
+  width: 80%; /* Adjust the width of the line */
+  margin: 10px 0 10px 0;
+}
+
 .about-content {
     display: flex;
     flex-direction: column;
