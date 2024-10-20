@@ -147,17 +147,41 @@ h2,h1,h3,h4 {
   margin: 20px 0 20px 0;
 }
 
+.about-container {
+  display: flex; /* Use flexbox to create a row layout */
+  align-items: flex-start; /* Align items at the top */
+  padding: 50px; /* Optional padding */
+}
+
+.about-left-column {
+  flex: 1; /* Adjust flex value as needed */
+}
+
+.about-right-column {
+  flex: 2; 
+}
+
+.about-image {
+  max-width: 90%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about-content h1 {
+  text-align: left;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
   line-height: 1.6;
 }
+
 
 .cv-button {
     background-color: white; /* Green background */
@@ -430,7 +454,7 @@ h2,h1,h3,h4 {
   flex: 1;
   justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   width: 60%;
   line-height: 1.6;
@@ -440,14 +464,14 @@ footer {
   background-color: white; /* Light background color */
   padding: 20px;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .partners-section h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: black;
 }
 
 .logo-container {
