@@ -91,7 +91,7 @@ a:hover {
 
 .image-card {
   border: 1px solid #ccc; /* Border around the card */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 0px; /* Rounded corners */
   padding: 15px; /* Padding inside the card */
   max-width: 300px; /* Limit the card width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
@@ -100,7 +100,6 @@ a:hover {
 
 .image-card img {
   width: 100%; /* Make the image take up the card's width */
-  border-radius: 8px; /* Optional: same rounded corners for image */
 }
 
 .image-card a {
@@ -150,7 +149,7 @@ h2,h1,h3,h4 {
 .about-container {
   display: flex; /* Use flexbox to create a row layout */
   align-items: flex-start; /* Align items at the top */
-  padding: 50px; /* Optional padding */
+  padding: 10px; /* Optional padding */
 }
 
 .about-left-column {
@@ -158,7 +157,8 @@ h2,h1,h3,h4 {
 }
 
 .about-right-column {
-  flex: 2; 
+  flex: 1;
+  flex-direction: column;
 }
 
 .about-image {
@@ -174,11 +174,8 @@ h2,h1,h3,h4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
   text-align: left;
-  margin: 0 auto;
-  width: 50%;
+  width: 90%;
   line-height: 1.6;
 }
 
@@ -195,7 +192,6 @@ h2,h1,h3,h4 {
     font-size: 16px; /* Font size */
     margin: 10px 2px; /* Margin around the button */
     cursor: pointer; /* Cursor changes to pointer on hover */
-    border-radius: 5px; /* Rounded corners */
     width: 30%;
   }
   
@@ -203,79 +199,79 @@ h2,h1,h3,h4 {
     background-color: #acacac; /* Darker green on hover */
   }
 
-  /* Style the portfolio container */
-  .portfolio h1 {
-    text-align: center;
-  }
-
+/* Style the portfolio container */
+.portfolio h1 {
+  text-align: center;
+}
 
 .portfolio {
-    display: flex; /* Flexbox layout */
-    flex-direction: column;
-    justify-content: space-between; /* Even space between items */
-    margin: 0 auto; /* Center the container */
-    width: 90%; /* Set width of container */
-    max-width: 1200px; /* Optional: Limit maximum width */
+  display: flex; /* Flexbox layout */
+  flex-direction: column;
+  justify-content: space-between; /* Even space between items */
+  margin: 0 auto; /* Center the container */
+  width: 90%; /* Set width of container */
+  max-width: 1200px; /* Optional: Limit maximum width */
+}
+
+.portfolio-items {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between;
+}
+
+/* Style individual portfolio items */
+.portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
+  width: 30%; /* Each item takes 30% of the container */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+}
+
+/* Background image box */
+.portfolio-item-1 a, .portfolio-item-2 a, .portfolio-item-3 a {
+  display: block;
+  width: 100%;
+  height: 300px; /* Image box height */
+  background-size: cover; /* Ensure background image covers the entire div */
+  background-position: center; /* Center the background image */
+}
+
+/* Add specific background images for each category */
+.portfolio-item-1 a {
+  background-image: url('Images/Portfolio/pexels-mikael-blomkvist-6476588.jpg');
+}
+  
+.portfolio-item-2 a {
+  background-image: url('Images/Portfolio/China photos/DSC_0882.jpg');
+}
+
+.portfolio-item-3 a {
+  background-image: url('Images/Portfolio/pexels-ann-h-45017-1762851.jpg');
+}
+
+/* Style the h2 (text below the image) */
+.portfolio-item-1 h2, .portfolio-item-2 h2, .portfolio-item-3 h2 {
+  margin-top: 10px;
+  font-size: 24px; /* Size of the text */
+  color: white; /* Change text color */
+  text-align: center;
+  font-family: 'Raleway', sans-serif; /* Font style */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-items {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items */
   }
 
-  .portfolio-items {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between;
-    
-    
+  .portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
+    width: 90%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Space between items */
   }
-  
-  /* Style individual portfolio items */
-  .portfolio-item, .portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
-    position: relative; /* Allows for absolute positioning of the text */
-    width: 30%; /* Each item takes 30% of the container */
-    height: 300px; /* Height of each item */
-    background-size: cover; /* Ensure background image covers the entire div */
-    background-position: center; /* Center the background image */
-    display: flex; /* Flexbox for content inside the item */
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-    color: white; /* White text on top of background */
-    font-family: 'Raleway', sans-serif; /* Font style */
-    border-radius: 10px; /* Rounded corners for items */
-    overflow: hidden; /* Ensures text/image don't overflow the container */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
-  }
-  
-  /* Set the h3 style */
-  .portfolio-item h3 {
-    font-size: 24px; /* Size of the text */
-    margin: 0; /* Remove default margin */
-    z-index: 2; /* Ensure text appears above background */
-  }
-  
-  /* Add specific background images for each category */
-  .portfolio-item-1 {
-    background-image: url('Images/Portfolio/pexels-mikael-blomkvist-6476588.jpg');
-  }
-  
-  .portfolio-item-2 {
-    background-image: url('Images/Portfolio/China photos/DSC_0882.jpg');
-  }
-  
-  .portfolio-item-3 {
-    background-image: url('Images/Portfolio/pexels-ann-h-45017-1762851.jpg');
-  }
-  
-  @media (max-width: 768px) {
-    .portfolio {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center the items */
-    }
-  
-    .portfolio-item {
-      width: 90%; /* Full width on smaller screens */
-      margin-bottom: 20px; /* Space between items */
-    }
-  }
+}
+
 /* Card container */
 .card {
-    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     overflow: hidden; /* Prevent content from overflowing */
     min-width: 370px;
@@ -448,29 +444,46 @@ h2,h1,h3,h4 {
   transform: scale(1.05);
 }
 
+.deas-page {
+  height: 100%;
+  background-color: white;
+}
+
 .deas-content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers content horizontally */
   text-align: left;
   margin: 0 auto;
   width: 60%;
   line-height: 1.6;
+  padding-bottom: 240px;
 }
 
-footer {
+.deas-footer-padding {
+  min-height: 100%;
+  background-color: #000000;
+}
+
+#deas-footer {
   background-color: white; /* Light background color */
-  padding: 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  padding: 20px;
-  margin-top: auto; /* Pushes the footer to the bottom */
+
+  /* Pushes the footer to the bottom */
+  height: 240px;
+  margin-top: -240px;
+  position: relative;
+  clear: both;
 }
 
 .partners-section h3 {
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
   color: black;
 }
 
@@ -532,3 +545,28 @@ footer {
   color: white;
   text-align: left;
 }
+
+.music-image {
+  max-width: 50%; /* Responsive image */
+  height: 50%; /* Maintain aspect ratio */
+  display: flex;
+  margin:auto;
+  padding:30px;
+
+
+}
+
+.music-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+  line-height: 1.6;
+  }
+  
+  .music-content h1 {
+    text-align: center;
+  }
+  
