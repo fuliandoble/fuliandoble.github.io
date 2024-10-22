@@ -376,7 +376,7 @@ h2,h1,h3,h4 {
   align-items: center; /* Center the text vertically */
   color: white; /* White text on top of background */
   font-family: 'Raleway', sans-serif; /* Font style */
-  border-radius: 10px; /* Rounded corners for items */
+  padding: 20px;
   overflow: hidden; /* Ensures text/image don't overflow the container */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
 }
@@ -428,7 +428,6 @@ h2,h1,h3,h4 {
 .masonry-item {
   break-inside: avoid; /* Avoid breaking the item */
   margin-bottom: 20px; /* Space between rows */
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -436,12 +435,34 @@ h2,h1,h3,h4 {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .masonry-item:hover img {
   transform: scale(1.05);
+}
+
+.deas-container {
+  display: flex; /* Use flexbox to create a row layout */
+  align-items: flex-start; /* Align items at the top */
+  padding: 10px; /* Optional padding */
+}
+
+.deas-left-column {
+  flex: 1; /* Adjust flex value as needed */
+  flex-direction: column;
+}
+
+.deas-right-column {
+  flex: 1;
+  flex-direction: column;
+}
+.deas-image {
+  max-width: 40%; /* Responsive image */
+  height: 40%; /* Maintain aspect ratio */
+  display: flex;
+  margin:auto;
+  padding:30px;
 }
 
 .deas-page {
@@ -453,13 +474,22 @@ h2,h1,h3,h4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center; /* Centers content horizontally */
+  align-items: left; /* Centers content horizontally */
   text-align: left;
-  margin: 0 auto;
-  width: 60%;
+  width: 70%;
   line-height: 1.6;
   padding-bottom: 240px;
 }
+
+
+.deas-image {
+  max-width: 40%; /* Responsive image */
+  height: 40%; /* Maintain aspect ratio */
+  display: flex;
+  margin:auto;
+  padding:20px;
+}
+
 
 .deas-footer-padding {
   min-height: 100%;
@@ -473,8 +503,8 @@ h2,h1,h3,h4 {
   text-align: center;
 
   /* Pushes the footer to the bottom */
-  height: 240px;
-  margin-top: -240px;
+  height: 500px;
+  margin-top: -150px;
   position: relative;
   clear: both;
 }
