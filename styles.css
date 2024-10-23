@@ -6,33 +6,70 @@ body {
     margin: 0;
     padding: 0;
 }
-
 nav {
-    background-color: black;
-    padding: 1em 0;
+  background-color: black;
+  padding: 1em 0;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline-block;
+  position: relative; /* Needed for positioning dropdowns */
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 1em 0; /* Add padding to align with dropdowns */
+  display: block;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  background-color: black;
+  padding: 0;
+  list-style: none;
+  min-width: 160px; /* Adjust width as needed */
+  top: 100%; /* Position dropdown below the parent menu */
+  left: 0;
+  text-align: left; /* Align dropdown items to the left */
+}
+
+.dropdown-menu li {
+  margin: 0; /* Remove margin for dropdown items */
+  display: block;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px; /* Add padding for dropdown links */
+  text-decoration: none;
+  font-size: 16px; /* Slightly smaller than main menu */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757; /* Background change on hover */
+  text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 
 a {
     color: #ffffff; /* White text */
@@ -199,77 +236,6 @@ h2,h1,h3,h4 {
     background-color: #acacac; /* Darker green on hover */
   }
 
-/* Style the portfolio container */
-.portfolio h1 {
-  text-align: center;
-}
-
-.portfolio {
-  display: flex; /* Flexbox layout */
-  flex-direction: column;
-  justify-content: space-between; /* Even space between items */
-  margin: 0 auto; /* Center the container */
-  width: 90%; /* Set width of container */
-  max-width: 1200px; /* Optional: Limit maximum width */
-}
-
-.portfolio-items {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between;
-}
-
-/* Style individual portfolio items */
-.portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
-  width: 30%; /* Each item takes 30% of the container */
-  display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center;
-}
-
-/* Background image box */
-.portfolio-item-1 a, .portfolio-item-2 a, .portfolio-item-3 a {
-  display: block;
-  width: 100%;
-  height: 300px; /* Image box height */
-  background-size: cover; /* Ensure background image covers the entire div */
-  background-position: center; /* Center the background image */
-}
-
-/* Add specific background images for each category */
-.portfolio-item-1 a {
-  background-image: url('Images/Portfolio/pexels-mikael-blomkvist-6476588.jpg');
-}
-  
-.portfolio-item-2 a {
-  background-image: url('Images/Portfolio/China photos/DSC_0882.jpg');
-}
-
-.portfolio-item-3 a {
-  background-image: url('Images/Portfolio/pexels-ann-h-45017-1762851.jpg');
-}
-
-/* Style the h2 (text below the image) */
-.portfolio-item-1 h2, .portfolio-item-2 h2, .portfolio-item-3 h2 {
-  margin-top: 10px;
-  font-size: 24px; /* Size of the text */
-  color: white; /* Change text color */
-  text-align: center;
-  font-family: 'Raleway', sans-serif; /* Font style */
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .portfolio-items {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the items */
-  }
-
-  .portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
-    width: 90%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Space between items */
-  }
-}
-
 /* Card container */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
@@ -345,74 +311,67 @@ h2,h1,h3,h4 {
     text-align:center;
   }
 
-/*photography page */
-
-
-.photography {
-  display: flex; /* Flexbox layout */
+/* Basic styling */
+.categories {
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Even space between items */
-  margin: 0 auto; /* Center the container */
-  width: 90%; /* Set width of container */
-  max-width: 1200px; /* Optional: Limit maximum width */
+  gap: 40px;
+  margin: 20px 0;
 }
 
-.photography-items {
-  display: flex; /* Flexbox layout */
+/* Category container */
+.category {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  
-  
 }
 
-/* Style individual portfolio items */
-.photography-item, .photography-item-1, .photography-item-2, .photography-item-3, .photography-item-4 {
-  position: relative; /* Allows for absolute positioning of the text */
-  width: 30%; /* Each item takes 30% of the container */
-  height: 300px; /* Height of each item */
-  background-size: cover; /* Ensure background image covers the entire div */
-  background-position: center; /* Center the background image */
-  display: flex; /* Flexbox for content inside the item */
-  justify-content: center; /* Center the text horizontally */
-  align-items: center; /* Center the text vertically */
-  color: white; /* White text on top of background */
-  font-family: 'Raleway', sans-serif; /* Font style */
-  padding: 20px;
-  overflow: hidden; /* Ensures text/image don't overflow the container */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text for readability */
+/* Image styling */
+.category-image {
+  flex: 1;
+  margin: 0 20px;
 }
 
-/* Set the h3 style */
-.photography-item h3 {
-  font-size: 24px; /* Size of the text */
-  margin: 0; /* Remove default margin */
-  z-index: 2; /* Ensure text appears above background */
+.category-image img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
 }
 
-.photography-item-1 {
-  background-image: url('Images/Portfolio/China photos/DSC_0905.jpg');
+/* Text styling */
+.category-text {
+  flex: 1;
+  margin: 0 20px;
 }
 
-.photography-item-2 {
-  background-image: url('Images/Portfolio/Rainy Mcdonalds/DSC_0039.jpg');
+.category-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.photography-item-3 {
-  background-image: url('Images/Portfolio/My plants/DSC_0023.jpg');
+.category-text p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-.photography-item-4 {
-  background-image: url('Images/Portfolio/Pet photography/DSC_0149.jpg')
+/* Alternating layouts */
+.category .left {
+  order: 1;
+}
+
+.category .right {
+  order: 2;
 }
 
 @media (max-width: 768px) {
-  .photography {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the items */
+  /* Stack vertically for mobile */
+  .category {
+      flex-direction: column;
+      text-align: left;
   }
 
-  .photography-item {
-    width: 90%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Space between items */
+  .category-image, .category-text {
+      margin: 10px 0;
   }
 }
 

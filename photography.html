@@ -13,36 +13,56 @@
     <body>
         <!-- Navigation Menu (repeated across all pages) -->
         <nav>
-            <ul>
+          <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+  
+              <li class="dropdown">
+                  <a href="#">Portfolio</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="photography.html">Photography</a></li>
+                      <li><a href="website-design.html">Website design</a></li>
+                  </ul>
+              </li>
+  
               <li><a href="publications.html">Publications</a></li>
               <li><a href="decolonise east asian studies.html">Decolonise East Asian Studies</a></li>
               <li><a href="my music.html">My music</a></li>
-            </ul>
+          </ul>
+      </nav>
 
 
             <div class="photography-header">
                 <h1>Photography</h1>
-                <div class="photography">
-                    <div class="photography-items">
-                        <div class="photography-item-1">
-                          <a href="china2024.html"><h2>China 2024</h2></a>
-                        </div>
-                        <div class="photography-item-2">
-                          <a href="blank"><h2>Rainy Mcdonalds</h2></a>
-                        </div>
-                        <div class="photography-item-3">
-                          <h2>My plants</h2>
-                        </div>
-                        <div class="photography-item-4">
-                            <a href="pet-photography.html"><h2>Pet photography</h2></a>
-                          </div>
+            </div>
 
-                        </div>
+                <section class="categories">
+                  <!-- Category 1 (Image on the left) -->
+                  <div class="category">
+                      <div class="category-image left">
+                          <img src="Images/Portfolio/China photos\DSC_0905.jpg" alt="Category 1 Image">
                       </div>
-        
+                      <div class="category-text right">
+                          <h2>China 2024</h2>
+                          <p>Explore my work in portrait photography, capturing expressions and emotions.</p>
+                      </div>
+                  </div>
+              
+                  <!-- Category 2 (Image on the right) -->
+                  <div class="category">
+                      <div class="category-text left">
+                          <h2>Nature Photography</h2>
+                          <p>A collection of my best nature shots, highlighting the beauty of the outdoors.</p>
+                      </div>
+                      <div class="category-image right">
+                          <img src="Images/Portfolio/My plants/DSC_0023.jpg" alt="Category 2 Image">
+                      </div>
+                  </div>
+
+
+                  </div>
+              </section>
+              
         
         </nav>
         </body>
