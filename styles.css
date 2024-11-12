@@ -317,6 +317,7 @@ h2,h1,h3,h4 {
   flex-direction: column;
   gap: 40px;
   margin: 20px 0;
+  border: 2px white;
 }
 
 /* Category container */
@@ -541,8 +542,6 @@ h2,h1,h3,h4 {
   display: flex;
   margin:auto;
   padding:30px;
-
-
 }
 
 .music-content {
@@ -559,3 +558,52 @@ h2,h1,h3,h4 {
     text-align: center;
   }
   
+
+  .masonry-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.masonry-item {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row, adjust as needed */
+    width: 100%; /* Ensures the image matches the container width */
+    max height: 500px; /* Sets a consistent height */
+    object-fit: cover; /* Makes sure the image fits the container without distortion */
+}
+@media (max-width: 768px) {
+    .masonry-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .masonry-item {
+        flex: 1 1 100%; /* 1 item per row on very small screens */
+    }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Center videos horizontally */
+  gap: 20px; /* Add space between the videos */
+  flex-wrap: wrap; /* Allow videos to stack on smaller screens */
+  margin: 20px 0; /* Add some space around the video container */
+}
+
+.video-container iframe {
+  max-width: 100%; /* Make sure the video adjusts to screen size */
+  height: 300px; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column; /* Stack videos vertically on smaller screens */
+    align-items: center; /* Center videos on mobile devices */
+  }
+}
