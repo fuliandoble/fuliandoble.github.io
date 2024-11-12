@@ -244,9 +244,9 @@ h2,h1,h3,h4 {
     min-height:550px;
     max-width: 380px;
     max-height:800px;
-    margin:10px; /* Space around each card */
+    margin:5px; /* Space around each card */
     text-align: center; /* Center the text */
-    background-color: white; /* Background color of the card */
+    border: 2px solid white;
     transition: transform 0.3s ease; /* Animation on hover */
   }
   
@@ -260,11 +260,21 @@ h2,h1,h3,h4 {
     font-family: 'Raleway', sans-serif;
     background-color: none;
     padding: 10px;
-    color: black;
+    color: white;
   }
+
+/* Remove underline from links inside h3 (or any other heading) */
+.card-header a {
+  text-decoration: none; /* Removes the underline from the link */
+}
+
+/* Optionally, you may want to ensure that links within any heading (h1, h2, etc.) are also styled this way */
+.card-header a:link, .card-header a:visited {
+  text-decoration: none;
+}
   
 .card-header a{
-  color: black;
+  color: white;
 }
 
   /* Card image */
@@ -279,7 +289,7 @@ h2,h1,h3,h4 {
     font-family: 'Raleway', sans-serif;
     padding: 15px;
     line-height: 1.5;
-    color: black;
+    color: white;
   }
   
   .cards-container {
@@ -310,14 +320,18 @@ h2,h1,h3,h4 {
   .photography-header h1 {
     text-align:center;
   }
+  .photography-header p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
 /* Basic styling */
 .categories {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 20px 0;
-  border: 2px white;
+  margin: 20px 20px;
+  padding: 20px 20px; /* Adds space on both sides */
 }
 
 /* Category container */
@@ -325,16 +339,19 @@ h2,h1,h3,h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 20px;
+  background-color: white;
+  height: 500px;
 }
 
 /* Image styling */
 .category-image {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .category-image img {
-  width: 80%;
+  width: 70%;
   height: auto;
   object-fit: cover;
 }
@@ -342,17 +359,20 @@ h2,h1,h3,h4 {
 /* Text styling */
 .category-text {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 10px;
+  color: #000000;
 }
 
 .category-text h2 {
   font-size: 30px;
   margin-bottom: 10px;
+  color: #000000;
 }
 
 .category-text p {
   font-size: 20px;
   line-height: 1.5;
+  color: #000000;
 }
 
 /* Alternating layouts */
@@ -369,12 +389,14 @@ h2,h1,h3,h4 {
   .category {
       flex-direction: column;
       text-align: left;
+      margin: 10px;
   }
 
   .category-image, .category-text {
       margin: 10px 0;
   }
 }
+
 
 .China-header h1 {
   text-align:center;
@@ -411,6 +433,8 @@ h2,h1,h3,h4 {
 .deas-left-column {
   flex: 1; /* Adjust flex value as needed */
   flex-direction: column;
+  margin: 20px;
+  padding: 10px;
 }
 
 .deas-right-column {
@@ -548,7 +572,7 @@ h2,h1,h3,h4 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  text-align: left;
+  align-items: center;
   margin: 0 auto;
   width: 50%;
   line-height: 1.6;
@@ -557,6 +581,10 @@ h2,h1,h3,h4 {
   .music-content h1 {
     text-align: center;
   }
+
+  .music-content p{
+    text-align: left;
+  }
   
 
   .masonry-container {
@@ -564,8 +592,7 @@ h2,h1,h3,h4 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border: 2px solid white;
-    padding: 10px;
+   padding: 10px;
     box-sizing: border-box;
 }
 .masonry-item {
@@ -599,6 +626,10 @@ h2,h1,h3,h4 {
 .video-container iframe {
   max-width: 100%; /* Make sure the video adjusts to screen size */
   height: 300px; /* Maintain aspect ratio */
+}
+
+.video-container {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
