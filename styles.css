@@ -610,17 +610,19 @@ h2,h1,h3,h4 {
     margin-bottom: 10px;
     flex: 1 1 calc(33.333% - 20px); /* 3 items per row, adjust as needed */
     width: 100%; /* Ensures the image matches the container width */
-    max height: 500px; /* Sets a consistent height */
+    max height: 400px; /* Sets a consistent height */
     object-fit: cover; /* Makes sure the image fits the container without distortion */
 }
 @media (max-width: 768px) {
     .masonry-item {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+        flex: 1 1 calc(50% - 20px);
+        max-height: 500px;
     }
 }
 @media (max-width: 480px) {
     .masonry-item {
         flex: 1 1 100%; /* 1 item per row on very small screens */
+        max-height: 500px;
     }
 }
 
