@@ -327,7 +327,7 @@ h2,h1,h3,h4 {
 
 /* Basic styling */
 .categories {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 20px 20px;
@@ -336,7 +336,7 @@ h2,h1,h3,h4 {
 
 /* Category container */
 .category {
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 20px;
@@ -413,7 +413,7 @@ h2,h1,h3,h4 {
   column-count: 3; /* Number of columns */
   column-gap: 20px; /* Space between columns */
   background-color: white;
-  margin: 20px 20px
+  margin: 20px
 }
 
 .masonry-item {
