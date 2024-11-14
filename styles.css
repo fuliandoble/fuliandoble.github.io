@@ -426,7 +426,6 @@ h2,h1,h3,h4 {
 .masonry {
   column-count: 3; /* Number of columns */
   column-gap: 20px; /* Space between columns */
-  background-color: white;
   margin: 20px
 }
 
@@ -460,8 +459,6 @@ h2,h1,h3,h4 {
 .deas-left-column {
   flex: 1; /* Adjust flex value as needed */
   flex-direction: column;
-  margin: 20px;
-  padding: 10px;
 }
 
 .deas-right-column {
@@ -472,8 +469,6 @@ h2,h1,h3,h4 {
   max-width: 40%; /* Responsive image */
   height: 40%; /* Maintain aspect ratio */
   display: flex;
-  margin:auto;
-  padding:30px;
 }
 
 .deas-page {
@@ -620,7 +615,7 @@ h2,h1,h3,h4 {
     flex-wrap: wrap;
   }
 
-  .graphic-design-container {
+  .masonry-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -628,7 +623,7 @@ h2,h1,h3,h4 {
    padding: 10px;
     box-sizing: border-box;
 }
-.graphic-design-item {
+.masonry-item {
     padding: 15px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -638,13 +633,13 @@ h2,h1,h3,h4 {
     object-fit: cover; /* Makes sure the image fits the container without distortion */
 }
 @media (max-width: 768px) {
-    .graphic-design-item {
+    .masonry-item {
         flex: 1 1 calc(50% - 20px);
         max-height: 500px;
     }
 }
 @media (max-width: 480px) {
-    .graphic-design-item {
+    .masonry-item {
         flex: 1 1 100%; /* 1 item per row on very small screens */
         max-height: 500px;
     }
