@@ -649,6 +649,7 @@ h2,h1,h3,h4 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 
