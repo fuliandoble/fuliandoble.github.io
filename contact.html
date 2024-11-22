@@ -8,11 +8,11 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fu Lian Doble - Music </title>
+        <title>Fu Lian Doble - About</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-<body class="my-music-page">
-    <!-- Navigation Menu -->
+    <body>
+        <!-- Navigation Menu (repeated across all pages) -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -34,14 +34,28 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    <div class="music-content">
-        <h1>My music</h1>
-            <img src="Images/DSC_0433.png" alt="Fu Lian Doble headshot" class="music-image">
-                <p> I am classical singer with a Certificate in Higher Education from the prestigious RNCM, as well as ARSM in both piano and voice.</p>
-                <p>I have sung in many choirs in the past such as; RNCM Symphony Chorus, BBC Youth Choir and St Mary's Choir, Conwy. With St Mary's, I have regularly appeared on the Radio Wales recordings from the church. As a soloist, I performed at the prestigious Rhyl Music Club and various charities including Cruse Bereavement Care and St David's Hospice. I have also held solo concerts for the <a href="https://www.northwalespioneer.co.uk/news/16354571.five-hundred-years-music-week-long-conwy-classical-music-festival/" target="_blank">Conwy Classical Music Festival</a> which is available to listen to on <a href="https://www.youtube.com/@fuliandoble-music"target="_blank">my personal Youtube.</a></p>
-                <p>Currently I sing Soprano 1 in <a href="https://www.youtube.com/@ScholaApium" target="_blank">Schola Apium,</a> a chamber choir based in Manchester.</p>
-            </div>
-        </div>
-    </div>
+        <div class="contact-text">
+            <h2>Contact</h2>
+          </div>
+  <div class="contact-container">
+    <form target="_blank" action="https://formsubmit.co/el/wowoko" method="POST">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="youremail@email.com">
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+      <input type="hidden" name="_next" value="contact-thankyou.html">
+      <input type="hidden" name="_autoresponse" value="This is an autoresponse to inform you I have recieved your email. I will attempt to reply soon. Fu.">
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 </html>
