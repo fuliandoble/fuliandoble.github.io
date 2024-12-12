@@ -42,12 +42,28 @@ nav ul li a:hover {
   position: absolute;
   background-color: black;
   padding: 0;
+  border: 2px solid white;
   list-style: none;
-  min-width: 160px; /* Adjust width as needed */
+  min-width: 160px;
   top: 100%; /* Position dropdown below the parent menu */
   left: 0;
-  text-align: left; /* Align dropdown items to the left */
-  translate: -20% 0%
+  text-align: left;
+  translate: -20% 0%;
+  z-index: 1000; /* Ensure the dropdown is above other elements */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static; /* Let the dropdown flow naturally in mobile layout */
+    min-width: 100%; /* Expand dropdown to the full width */
+    translate: none; /* Reset translation */
+    margin-top: 10px; /* Add spacing from the main menu */
+  }
+
+  .dropdown-menu li {
+    text-align: center; /* Center-align dropdown items for better mobile layout */
+  }
 }
 
 .dropdown-menu li {
@@ -584,11 +600,11 @@ h2,h1,h3,h4 {
 }
 
 .music-image {
-  max-width: 50%; /* Responsive image */
-  height: 50%; /* Maintain aspect ratio */
-  display: flex;
-  margin:auto;
-  padding:30px;
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure proper alignment */
+  margin: auto; /* Center the image */
+  padding: 30px;
 }
 
 .music-content {
