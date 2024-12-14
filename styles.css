@@ -1,48 +1,48 @@
 /* General styling */
 body {
-    font-family: Raleway, sans-serif;
-    background-color: #000000; /* Black background */
-    color: white; /* White text for contrast */
-    margin: 0;
-    padding: 0;
+  font-family: Raleway, sans-serif;
+  background-color: #000000; /* Black background */
+  color: white; /* White text for contrast */
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: #ffffff; /* White text */
-    text-decoration: underline; /* Underlined text */
+  color: #ffffff; /* White text */
+  text-decoration: underline; /* Underlined text */
 }
 
 /* Optionally, style the hover state */
 a:hover {
-    color: #ffffff; /* Keep white on hover */
-    text-decoration: underline; /* Keep underlined on hover */
+  color: #ffffff; /* Keep white on hover */
+  text-decoration: underline; /* Keep underlined on hover */
 }
 
 /* Container for two-column layout */
 .index-page .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2em;
-    max-width: 1000px;
-    min-height: 400px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em;
+  max-width: 1000px;
+  min-height: 400px;
+  margin: 0 auto;
 }
 
 /* Left column */
 .index-page .left-column {
-    flex: 1;
-    padding-right: 2em;
+  flex: 1;
+  padding-right: 2em;
 }
 
 .index-page .left-column h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .index-page .left-column p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .index-page .-column h2 {
@@ -52,14 +52,14 @@ a:hover {
 
 /* Right column */
 .index-page .right-column {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
 }
 
 .index-page .right-column img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .image-card {
@@ -81,43 +81,47 @@ a:hover {
 
 .image-text {
   padding: 10px 0 0; /* Space above the text */
-  color:black
+  color: black;
 }
 
 .new-row {
   display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2em;
-    max-width: 1000px;
-    margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .index-page .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 1em;
-    }
+  .index-page .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
 
-    .left-column, .right-column {
-        padding: 0;
-        margin-bottom: 1em;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .left-column,
+  .right-column {
+    padding: 0;
+    margin-bottom: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .new-row {
-      flex-direction: column;
-    }
+  .new-row {
+    flex-direction: column;
+  }
 }
-h2,h1,h3,h4 {
-    font-family: 'Raleway', sans-serif; /* Ensure you're using the correct font */
-    letter-spacing: 1px; /* Adjust spacing as needed (try values like 1px, 2px, etc.) */
-    font-weight: 600; /* You can adjust this based on the weight you prefer */
-    color: #ffffff; /* White color for contrast against black background */
+h2,
+h1,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif; /* Ensure you're using the correct font */
+  letter-spacing: 1px; /* Adjust spacing as needed (try values like 1px, 2px, etc.) */
+  font-weight: 600; /* You can adjust this based on the weight you prefer */
+  color: #ffffff; /* White color for contrast against black background */
 }
 
 .frontpage-line {
@@ -137,9 +141,9 @@ h2,h1,h3,h4 {
 }
 
 @media (max-width: 750px) {
-    .about-container {
-      flex-direction: column;
-    }
+  .about-container {
+    flex-direction: column;
+  }
 }
 
 .about-left-column {
@@ -155,7 +159,6 @@ h2,h1,h3,h4 {
 .about-image {
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
-
 }
 
 .about-content h1 {
@@ -171,51 +174,50 @@ h2,h1,h3,h4 {
   line-height: 1.6;
 }
 
-
 .cv-button {
-    background-color: white; /* Green background */
-    border: none; /* No border */
-    color: black; /* White text */
-    padding: 15px 15px; /* Padding around the text */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* No underline for anchor tag */
-    display: inline-block; /* Aligns the button inline */
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px; /* Font size */
-    margin: 10px 2px; /* Margin around the button */
-    cursor: pointer; /* Cursor changes to pointer on hover */
-    width: 30%;
-  }
-  
-  .cv-button:hover {
-    background-color: #acacac; /* Darker green on hover */
-  }
+  background-color: white; /* Green background */
+  border: none; /* No border */
+  color: black; /* White text */
+  padding: 15px 15px; /* Padding around the text */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline for anchor tag */
+  display: inline-block; /* Aligns the button inline */
+  font-family: "Raleway", sans-serif;
+  font-size: 16px; /* Font size */
+  margin: 10px 2px; /* Margin around the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  width: 30%;
+}
+
+.cv-button:hover {
+  background-color: #acacac; /* Darker green on hover */
+}
 
 /* Card container */
 .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    overflow: hidden; /* Prevent content from overflowing */
-    min-height:550px;
-    max-width: 380px;
-    max-height:800px;
-    margin:5px; /* Space around each card */
-    text-align: center; /* Center the text */
-    border: 2px solid white;
-    transition: transform 0.3s ease; /* Animation on hover */
-  }
-  
-  .card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-  }
-  
-  /* Card header */
-  .card-header {
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    background-color: none;
-    padding: 10px;
-    color: white;
-  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow: hidden; /* Prevent content from overflowing */
+  min-height: 550px;
+  max-width: 380px;
+  max-height: 800px;
+  margin: 5px; /* Space around each card */
+  text-align: center; /* Center the text */
+  border: 2px solid white;
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+}
+
+/* Card header */
+.card-header {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  background-color: none;
+  padding: 10px;
+  color: white;
+}
 
 /* Remove underline from links inside h3 (or any other heading) */
 .card-header a {
@@ -223,62 +225,62 @@ h2,h1,h3,h4 {
 }
 
 /* Optionally, you may want to ensure that links within any heading (h1, h2, etc.) are also styled this way */
-.card-header a:link, .card-header a:visited {
+.card-header a:link,
+.card-header a:visited {
   text-decoration: none;
 }
-  
-.card-header a{
+
+.card-header a {
   color: white;
 }
 
-  /* Card image */
-  .card-image {
-    width: 90%; /* Full width for the image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Card description */
-  .card-description {
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    padding: 15px;
-    line-height: 1.5;
-    color: white;
-  }
-  
+/* Card image */
+.card-image {
+  width: 90%; /* Full width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Card description */
+.card-description {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  padding: 15px;
+  line-height: 1.5;
+  color: white;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap cards to the next line if necessary */
+  justify-content: flex-start; /* Space between cards */
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1200px; /* Optional: Limit maximum width */
+}
+
+@media (max-width: 768px) {
   .cards-container {
-    display: flex;
-    flex-wrap: wrap; /* Wrap cards to the next line if necessary */
-    justify-content: flex-start; /* Space between cards */
-    margin: 10px auto;
-    width: 90%;
-    max-width: 1200px; /* Optional: Limit maximum width */
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-content: center;
   }
 
+  .card {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Space between stacked cards */
+  }
+}
 
-  @media (max-width: 768px) {
-    .cards-container {
-      flex-direction: column; /* Stack cards vertically on smaller screens */
-      align-content: center;
-    }
-  
-    .card {
-      width: 100%; /* Full width on small screens */
-      margin-bottom: 20px; /* Space between stacked cards */
-    }
-  }
+.website-design-header h1 {
+  text-align: center;
+}
 
-  .website-design-header h1 {
-    text-align:center;
-  }
-
-  .photography-header h1 {
-    text-align:center;
-  }
-  .photography-header p{
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.photography-header h1 {
+  text-align: center;
+}
+.photography-header p {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 /* Basic styling */
 /* Container for categories */
@@ -308,15 +310,14 @@ h2,h1,h3,h4 {
 /* Image styling */
 .category-image {
   margin: 0 0px;
-    height: 100%;
-    flex-shrink: 1;
-
+  height: 100%;
+  flex-shrink: 1;
 }
 
-.category-image :right{
+.category-image :right {
   flex: 1;
   margin: 0 0px;
-  height: 300px
+  height: 300px;
 }
 
 .category-image img {
@@ -371,7 +372,8 @@ h2,h1,h3,h4 {
     margin: 5px 5px;
   }
 
-  .category-image, .category-text {
+  .category-image,
+  .category-text {
     width: 100%; /* Use full width for mobile */
     margin: 0;
     padding: 0;
@@ -400,16 +402,14 @@ h2,h1,h3,h4 {
   }
 }
 
-
-
 .China-header h1 {
-  text-align:center;
+  text-align: center;
 }
 
 .masonry {
   column-count: 3; /* Number of columns */
   column-gap: 20px; /* Space between columns */
-  margin: 20px
+  margin: 20px;
 }
 
 .masonry-item {
@@ -490,15 +490,13 @@ h2,h1,h3,h4 {
   padding-bottom: 240px;
 }
 
-
 .deas-image {
   max-width: 40%; /* Responsive image */
   height: 40%; /* Maintain aspect ratio */
   display: flex;
-  margin:auto;
-  padding:20px;
+  margin: auto;
+  padding: 20px;
 }
-
 
 .deas-footer-padding {
   min-height: 100%;
@@ -600,75 +598,74 @@ h2,h1,h3,h4 {
   margin: 0 auto;
   width: 50%;
   line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .music-content {
+    width: 90%;
   }
 
-  @media (max-width: 750px) {
-    .music-content {
-      width: 90%;
-    }
+  .music-image {
+    padding: 1px;
+  }
+}
 
-    .music-image {
-      padding: 1px;
-    }
-  }
-  
-  .music-content h1 {
-    text-align: center;
-  }
+.music-content h1 {
+  text-align: center;
+}
 
-  .music-content p{
-    text-align: left;
-  }
-  
-  .graphic-design-text{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+.music-content p {
+  text-align: left;
+}
 
-  .masonry-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-   padding: 10px;
-    box-sizing: border-box;
+.graphic-design-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.masonry-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .masonry-item {
-    padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    flex: 1 1 calc(33.333% - 20px); /* 3 items per row, adjust as needed */
-    width: 100%; /* Ensures the image matches the container width */
-    max-height: 400px; /* Sets a consistent height */
-    object-fit: cover; /* Makes sure the image fits the container without distortion */
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row, adjust as needed */
+  width: 100%; /* Ensures the image matches the container width */
+  max-height: 400px; /* Sets a consistent height */
+  object-fit: cover; /* Makes sure the image fits the container without distortion */
 }
 @media (max-width: 768px) {
-    .masonry-item {
-        flex: 1 1 calc(50% - 20px);
-        max-height: 500px;
-    }
+  .masonry-item {
+    flex: 1 1 calc(50% - 20px);
+    max-height: 500px;
+  }
 }
 @media (max-width: 480px) {
-    .masonry-item {
-        flex: 1 1 100%; /* 1 item per row on very small screens */
-        max-height: 500px;
-    }
+  .masonry-item {
+    flex: 1 1 100%; /* 1 item per row on very small screens */
+    max-height: 500px;
+  }
 }
 
 .video-text {
   align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 .video-text > p {
   max-width: 70%;
 }
-
 
 .video-container {
   display: flex;
@@ -694,29 +691,31 @@ h2,h1,h3,h4 {
   }
 }
 
-
-input[type=text], input[type=email], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid black; /* Gray border */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical ;
+  resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type="submit"] {
   background-color: white;
   color: black;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: grey;
 }
 
@@ -742,4 +741,32 @@ input[type=submit]:hover {
 
 .contact-container > form {
   max-width: 50%;
+}
+
+@media (max-width: 750px) {
+  .contact-container > form {
+    max-width: 90%;
+  }
+}
+
+.thankyou-text {
+  padding: 5%;
+  text-align: center;
+}
+
+.thankyou-text > button {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.thankyou-text a {
+  color: black;
+}
+
+.thankyou-text > button:hover {
+  background-color: grey;
 }
