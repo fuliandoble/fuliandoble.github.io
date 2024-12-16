@@ -90,7 +90,7 @@ nav.mobile-nav {
   }
 
   .icon {
-	margin-top: 5px;
-    width: 48px; /* Adjust as needed */
-    height: 48px; /* Adjust as needed */
+	margin-top: 0px;
+    width: 64px; /* Adjust as needed */
+    height: 64px; /* Adjust as needed */
 }
