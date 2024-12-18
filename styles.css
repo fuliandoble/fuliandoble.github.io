@@ -499,9 +499,10 @@ h2,h1,h3,h4 {
   flex-direction: column;
 }
 .deas-image {
-  max-width: 40%; /* Responsive image */
-  height: 40%; /* Maintain aspect ratio */
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
   display: flex;
+  flex: 1 1 auto;
 }
 
 .deas-page {
