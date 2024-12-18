@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fu Lian Doble - About</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Navigation Menu (repeated across all pages) -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-    
-                <li class="dropdown">
-                    <a href="photography.html">Portfolio</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="photography.html">Photography</a></li>
-                        <li><a href="website-design.html">Website design</a></li>
-                        <li><a href="graphic-design.html">Graphic design</a></li>
-                        <li><a href="video.html">Video</a></li>
-                    </ul>
-                </li>
-    
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="decolonise east asian studies.html">Decolonise East Asian Studies</a></li>
-                <li><a href="my music.html">My music</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="contact-text">
-            <h2>Contact</h2>
-          </div>
-  <div class="contact-container">
-    <form target="_blank" action="https://formsubmit.co/el/wowoko" method="POST">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="youremail@email.com">
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+<head>
+	<link rel="icon" type="image/x-icon" href="/Images/Favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 
-      <input type="hidden" name="_next" value="contact-thankyou.html">
-      <input type="hidden" name="_autoresponse" value="This is an autoresponse to inform you I have recieved your email. I will attempt to reply soon. Fu.">
-  
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fu Lian Doble - Contact</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="Templates/template-manager.js"></script>
+</head>
+
+<body>
+	<!-- Navigation Menu -->
+	<custom-nav></custom-nav>
+	<div class="contact-text">
+		<h2>Contact</h2>
+	</div>
+	<div class="contact-container">
+		<form target="_blank" action="https://formsubmit.co/4f80c11dd30a74cfcb35bba67fc5d9df" method="POST">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="youremail@email.com">
+
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+			<input type="hidden" name="_next" value="https://fuliandoble.github.io/contact-thankyou.html">
+			<input type="hidden" name="_autoresponse"
+				value="This is an autoresponse to inform you I have recieved your email. I will attempt to reply soon. Fu.">
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 </body>
+
 </html>
