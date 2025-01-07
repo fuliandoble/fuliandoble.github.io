@@ -437,6 +437,7 @@ h4 {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  gap: 2%;
 }
 
 @media (max-width: 750px) {
@@ -468,39 +469,28 @@ h4 {
   }
 }
 
-.deas-image {
-  max-width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
-  display: flex;
-  flex: 1 1 auto;
-}
-
 .deas-page {
-  height: 100%;
   background-color: white;
 }
 
 .deas-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  align-items: left; /* Centers content horizontally */
   text-align: left;
   width: 70%;
   line-height: 1.6;
-  padding-bottom: 240px;
+  padding-bottom: 100px;
 }
 
 .deas-image {
-  max-width: 40%; /* Responsive image */
-  height: 40%; /* Maintain aspect ratio */
+  max-width: 70%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
   display: flex;
   margin: auto;
   padding: 20px;
 }
 
 .deas-footer-padding {
-  min-height: 100%;
   background-color: #000000;
 }
 
@@ -509,12 +499,6 @@ h4 {
   padding: 0;
   margin: 0;
   text-align: center;
-
-  /* Pushes the footer to the bottom */
-  height: 500px;
-  margin-top: -150px;
-  position: relative;
-  clear: both;
 }
 
 .partners-section h3 {
@@ -528,14 +512,16 @@ h4 {
 .logo-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between logos */
+  gap: 10px; /* Space between logos */
   flex-wrap: wrap; /* Ensures logos wrap onto the next line if screen size is small */
 }
 
 .partner-logo {
   max-width: 150px; /* Adjust the size as needed */
-  height: auto;
+  max-height: 150px;
+  display: flex;
   transition: transform 0.3s ease; /* Adds a smooth zoom-in effect */
+  padding: 2%;
 }
 
 .partner-logo:hover {
