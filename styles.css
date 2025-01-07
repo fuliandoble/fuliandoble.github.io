@@ -512,14 +512,16 @@ h4 {
 .logo-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between logos */
+  gap: 10px; /* Space between logos */
   flex-wrap: wrap; /* Ensures logos wrap onto the next line if screen size is small */
 }
 
 .partner-logo {
   max-width: 150px; /* Adjust the size as needed */
-  height: auto;
+  max-height: 150px;
+  display: flex;
   transition: transform 0.3s ease; /* Adds a smooth zoom-in effect */
+  padding: 2%;
 }
 
 .partner-logo:hover {
