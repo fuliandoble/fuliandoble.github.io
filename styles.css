@@ -437,6 +437,7 @@ h4 {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  gap: 2%;
 }
 
 @media (max-width: 750px) {
@@ -468,13 +469,6 @@ h4 {
   }
 }
 
-.deas-image {
-  max-width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
-  display: flex;
-  flex: 1 1 auto;
-}
-
 .deas-page {
   background-color: white;
 }
@@ -482,17 +476,15 @@ h4 {
 .deas-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  align-items: left; /* Centers content horizontally */
   text-align: left;
   width: 70%;
   line-height: 1.6;
-  padding-bottom: 240px;
+  padding-bottom: 100px;
 }
 
 .deas-image {
-  max-width: 40%; /* Responsive image */
-  height: 40%; /* Maintain aspect ratio */
+  max-width: 70%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
   display: flex;
   margin: auto;
   padding: 20px;
