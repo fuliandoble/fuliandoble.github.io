@@ -771,3 +771,41 @@ input[type="submit"]:hover {
 .thankyou-text > button:hover {
   background-color: grey;
 }
+
+
+.connect-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.connect-video-container {
+    flex: 1;
+}
+
+.connect-video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+@media (max-width: 768px) {
+    .video-text {
+        flex-direction: column;
+    }
+}
+
+.homecoming-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  padding: 0 20px;
+}
+
+
+.homecoming-image {
+  max-width: 50%;   /* shrink it from full width */
+  height: auto;
+}
+
+.homecoming-video-text {
+    width: 50%;
+}
