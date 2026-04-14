@@ -252,9 +252,9 @@ h4 {
 .cards-container {
   display: flex;
   flex-wrap: wrap; /* Wrap cards to the next line if necessary */
-  justify-content: flex-start; /* Space between cards */
+  justify-content: center; /* Space between cards */
   margin: 10px auto;
-  width: 90%;
+  width: 95%;
   max-width: 1200px; /* Optional: Limit maximum width */
 }
 
@@ -797,4 +797,10 @@ input[type="submit"]:hover {
 
 .homecoming-video-text {
     width: 50%;
+}
+
+.centered-list {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center;
 }
